@@ -44,6 +44,9 @@
       "pre-commit": "lint-staged"
     }
   },
+  "publishConfig": {
+    "registry": "http://10.1.0.59:8081/nexus/repository/npm-private/"
+  },
   "lint-staged": {
     "*.ts": [
       "tsc --noEmit -p .",
@@ -61,13 +64,13 @@
       "git add"
     ]
   },
-  "name": "use-is-in-viewport",
+  "name": "mt-use-is-in-viewport",
   "description": "A react hook to use the IntersectionObserver declaratively in your React app.",
   "version": "1.0.8",
   "source": "src/index.ts",
   "main": "built/index.umd.js",
   "module": "built/index.esm.js",
-  "types": "built/src/index.d.ts",
+  "types": "built/index.d.ts",
   "sideEffects": false,
   "keywords": [
     "react",
